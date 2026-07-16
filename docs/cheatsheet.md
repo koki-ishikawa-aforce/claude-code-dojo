@@ -20,7 +20,7 @@
 | `/init` | CLAUDE.md の雛形生成 |
 | `/config` | 設定画面 |
 | `/mcp` | MCP サーバーの状態確認 |
-| `/permissions` | 権限ルールの確認・編集 |
+| `/permissions` | permissions ルールの確認・編集 |
 | `/自作skill名` | 自作 skill の呼び出し |
 
 ## 設定ファイルの置き場所
