@@ -32,7 +32,7 @@
 | `<repo>/.claude/skills/<name>/SKILL.md` | プロジェクト | 手順書（チーム共有可） |
 | `<repo>/.claude/settings.json` | プロジェクト | hooks・permissions（チーム共有） |
 | `<repo>/.claude/settings.local.json` | プロジェクト（個人） | 個人の permissions 等の上書き（git 管理外） |
-| `~/.claude/settings.json` | ユーザー全体 | 個人の hooks・権限 |
+| `~/.claude/settings.json` | ユーザー全体 | 個人の hooks・permissions |
 
 ## MCP
 

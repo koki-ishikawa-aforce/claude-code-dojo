@@ -103,7 +103,7 @@ AI エージェントは、**読んだデータの中に書かれた指示に影
 
 再起動して「テストを実行して」と頼むと、確認プロンプトなしで `npm test` が走ります。
 
-ポイントは **auto-accept との違い**です。auto-accept は「全部通す」モード、allow は「信頼できる操作を名指しで通す」設計です。`Bash(npm test:*)` の `:*` は末尾ワイルドカードで、`npm test -- --coverage` のような引数付きにもマッチします。
+ポイントは **auto-accept との違い**です。auto-accept は「編集をまとめて自動承認する」モード（ミッション00参照）、allow は「信頼できる操作を名指しで通す」設計です。`Bash(npm test:*)` の `:*` は末尾ワイルドカードで、`npm test -- --coverage` のような引数付きにもマッチします。
 
 ### 4. インジェクションを（無害に）体験する
 
@@ -142,7 +142,7 @@ docs/handover-memo.md を読んで、引き継ぎ事項を要約して
 ## 発展課題
 
 - 実案件のリポジトリを想定した deny リストを設計する（秘密情報ファイル、破壊的コマンド、本番環境向け CLI）
-- `.claude/settings.local.json` に個人用の allow を書き、project settings との優先順位を実際に確かめる
+- `.claude/settings.local.json` に個人用の allow を書き、project settings との優先順位を実際に確かめる（手動で作ったファイルは git ignore されているかも確認すること）
 - チーム標準の settings.json（allow / deny / hooks）を設計する。ミッション06の hooks と合わせると「チームの防護壁」一式になる
 
 ## ハマりどころ
