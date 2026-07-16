@@ -20,6 +20,7 @@
 | `/init` | CLAUDE.md の雛形生成 |
 | `/config` | 設定画面 |
 | `/mcp` | MCP サーバーの状態確認 |
+| `/permissions` | 権限ルールの確認・編集 |
 | `/自作skill名` | 自作 skill の呼び出し |
 
 ## 設定ファイルの置き場所
@@ -29,7 +30,8 @@
 | `~/.claude/CLAUDE.md` | ユーザー全体 | 個人の好み（応答言語など） |
 | `<repo>/CLAUDE.md` | プロジェクト | プロジェクトの前提・規約（チーム共有） |
 | `<repo>/.claude/skills/<name>/SKILL.md` | プロジェクト | 手順書（チーム共有可） |
-| `<repo>/.claude/settings.json` | プロジェクト | hooks・権限（チーム共有） |
+| `<repo>/.claude/settings.json` | プロジェクト | hooks・permissions（チーム共有） |
+| `<repo>/.claude/settings.local.json` | プロジェクト（個人） | 個人の permissions 等の上書き（git 管理外） |
 | `~/.claude/settings.json` | ユーザー全体 | 個人の hooks・権限 |
 
 ## MCP
@@ -63,6 +65,8 @@ npm test     # 自分でも実行する
 | 毎回守ってほしい前提・規約 | CLAUDE.md |
 | 繰り返し使う手順書 | skill |
 | 絶対に強制したい処理・禁止 | hooks |
+| 秘密情報を読ませない | permissions.deny |
+| 信頼できる操作の確認を減らす | permissions.allow |
 | 外部ツール・データへの接続 | MCP |
 | 大量に読む調査の委譲 | サブエージェント |
 | 複数タスクの完全並列 | git worktree + 複数セッション |
