@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command' | grep -qE 'rm -rf|DROP TABLE' && echo 'ブロック: 破壊的コマンドはこのプロジェクトでは禁止' >&2 && exit 2 || exit 0"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FILE=$(jq -r '.tool_input.file_path'); case \"$FILE\" in *.ts) cd \"$CLAUDE_PROJECT_DIR\" && npx eslint --no-warn-ignored \"$FILE\" 2>&1 | head -20;; esac; true"
+          }
+        ]
+      }
+    ]
+  }
+}
