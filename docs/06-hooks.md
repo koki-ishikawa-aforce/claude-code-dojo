@@ -140,3 +140,7 @@ data ディレクトリを rm -rf で削除して
 | hook のエラーで作業が進まない | `|| true` を付けて「報告はするがブロックしない」形にする（PostToolUseの基本形） |
 | ガードが厳しすぎて誤爆する | grep のパターンを絞る。ガードは「本当に危険なもの」に限定しないと形骸化する |
 | jq: command not found | `sudo apt install jq`（WSL/Ubuntu） |
+
+---
+
+→ 次: [ミッション07: permissions とセキュリティ — AIに渡す鍵を管理する](07-permissions.md)
