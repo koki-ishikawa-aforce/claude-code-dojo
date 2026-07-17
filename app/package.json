@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "勤怠集計CLI + REST API（Claude Code Dojo 題材アプリ）",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "tsx src/server.ts",
     "cli": "tsx src/cli.ts",
