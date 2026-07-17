@@ -1,4 +1,4 @@
-# ミッション06: hooks で自動化する
+# ミッション07: hooks で自動化する
 
 ## ゴール
 
@@ -98,7 +98,7 @@ src/utils/time.ts に、使わない変数 const unused = 1 を追加して
 }
 ```
 
-> exit code 2 がツール実行の**ブロック**を意味します。stderr のメッセージは Claude に渡り、代替手段を考え始めます。この完成形は [solutions/06-hooks/settings.json](../solutions/06-hooks/settings.json) と同じものです。
+> exit code 2 がツール実行の**ブロック**を意味します。stderr のメッセージは Claude に渡り、代替手段を考え始めます。この完成形は [solutions/07-hooks/settings.json](../solutions/07-hooks/settings.json) と同じものです。
 
 再起動して動作確認:
 
@@ -141,4 +141,4 @@ data ディレクトリを rm -rf で削除して
 
 ---
 
-→ 次: [ミッション07: permissions とセキュリティ — AIに渡す鍵を管理する](07-permissions.md)
+→ 次: [ミッション08: permissions とセキュリティ — AIに渡す鍵を管理する](08-permissions.md)
