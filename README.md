@@ -21,7 +21,7 @@ solutions/   ← 模範解答（詰まってから見る）
 
 ## 進め方
 
-> **前提環境**: WSL2（Ubuntu）/ macOS / Linux ＋ Node.js v20 以上。詳細は [docs/00-setup.md](docs/00-setup.md) を参照
+> **前提環境**: WSL2（Ubuntu）/ macOS / Linux ＋ Node.js v20 以上。詳細は [docs/00-setup.md](docs/00-setup.md) を参照。Windows で WSL 未導入の方は [docs/appendix-wsl.md](docs/appendix-wsl.md) から始めてください
 
 1. [docs/00-setup.md](docs/00-setup.md) から順に進める
 2. 各ミッションの**チェックポイント**を満たしたら次のミッションへ
